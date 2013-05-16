@@ -10,4 +10,6 @@ Rottenpotatoes::Application.routes.draw do
       post 'upload'
     end
   end
+  resources :frontpages
+  match '/choose_feature', :to => 'frontpages#choose_feature'
 end
