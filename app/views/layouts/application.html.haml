@@ -1,24 +1,4 @@
-%div
-  #fixeddiv{:style => "position:absolute; width:100%; height:52px; right:0px; top:0px; padding:0px; background-image:url('/Graphics/headerBar.png'); border:0px solid #2266AA"}
-  #realMiddle{:style => "width:1024px; margin-left:auto; margin-right:auto; z-index: 100; position:relative;"}
-    %div{:style => "margin-bottom: 2px; float: left"}
-      %a{:href => "/"}
-        %img{:height => "27", :src => "/Graphics/MathMooLogo.png", :width => "146"}/
-    %div{:style => "padding-left: 4px; padding-top: 13px; float: left; color: white; font-size: 12px"}
-      Educational Games For Everyone
-    %div{:style => "padding-left: 60px; padding-top: 0px; float: left"}
-      = link_to (image_tag (@on_page == 1 ? "/Graphics/Home/HomeActive.png" : "/Graphics/Home/HomeNotActive.png"), :mouseover => "/Graphics/Home/HomeActive.png"), games_path
-    %div{:style => "padding-left: 25px; padding-top: 0px; float: left"}
-      = link_to (image_tag (@on_page == 2 ? "/Graphics/Lessons/LessonsActive.png" : "/Graphics/Lessons/LessonsNotActive.png"), :mouseover => "/Graphics/Lessons/LessonsActive.png"), lessons_path
-    %div{:style => "padding-left: 25px; padding-top: 0px; float: left"}
-      = link_to (image_tag (@on_page == 3 ? "/Graphics/Teachers/TeachersActive.png" : "/Graphics/Teachers/TeachersNotActive.png"), :mouseover => "/Graphics/Teachers/TeachersActive.png"), teachers_path
-    %div{:style => "padding-left: 25px; padding-top: 0px; float: left"}
-      = link_to (image_tag (@on_page == 4 ? "/Graphics/Students/StudentsActive.png" : "/Graphics/Students/StudentsNotActive.png"), :mouseover => "/Graphics/Students/StudentsActive.png"), students_path
-    %div{:style => "padding-left: 25px; padding-top: 0px; float: left"}
-      = link_to (image_tag (@on_page == 5 ? "/Graphics/Parents/ParentsActive.png" : "/Graphics/Parents/ParentsNotActive.png"), :mouseover => "/Graphics/Parents/ParentsActive.png"), parents_path
-    %div{:style => "padding-left: 25px; padding-top: 0px; float: left"}
-      = link_to (image_tag (@on_page == 6 ? "/Graphics/Schools/SchoolsActive.png" : "/Graphics/Schools/SchoolsNotActive.png"), :mouseover => "/Graphics/Schools/SchoolsActive.png"), schools_path
-
+!!! 5
 %html
   %head
     %title Mathmoo
@@ -29,7 +9,28 @@
 
     
   %body
-    
+    %div
+      #fixeddiv{:style => "position:absolute; width:100%; height:52px; right:0px; top:0px; padding:0px; background-image:url('/Graphics/headerBar.png'); border:0px solid #2266AA"}
+      #realMiddle{:style => "width:1024px; margin-left:auto; margin-right:auto; z-index: 100; position:relative;"}
+        %div{:style => "margin-bottom: 2px; float: left"}
+          %a{:href => "/"}
+            %img{:height => "27", :src => "/Graphics/MathMooLogo.png", :width => "146"}/
+        %div{:style => "padding-left: 4px; padding-top: 13px; float: left; color: white; font-size: 12px"}
+          Educational Games For Everyone
+        %div{:style => "padding-left: 60px; padding-top: 0px; float: left"}
+          = link_to (image_tag (@on_page == 1 ? "/Graphics/Home/HomeActive.png" : "/Graphics/Home/HomeNotActive.png"), :mouseover => "/Graphics/Home/HomeActive.png"), games_path
+        %div{:style => "padding-left: 25px; padding-top: 0px; float: left"}
+          = link_to (image_tag (@on_page == 2 ? "/Graphics/Lessons/LessonsActive.png" : "/Graphics/Lessons/LessonsNotActive.png"), :mouseover => "/Graphics/Lessons/LessonsActive.png"), lessons_path
+        %div{:style => "padding-left: 25px; padding-top: 0px; float: left"}
+          = link_to (image_tag (@on_page == 3 ? "/Graphics/Teachers/TeachersActive.png" : "/Graphics/Teachers/TeachersNotActive.png"), :mouseover => "/Graphics/Teachers/TeachersActive.png"), teachers_path
+        %div{:style => "padding-left: 25px; padding-top: 0px; float: left"}
+          = link_to (image_tag (@on_page == 4 ? "/Graphics/Students/StudentsActive.png" : "/Graphics/Students/StudentsNotActive.png"), :mouseover => "/Graphics/Students/StudentsActive.png"), students_path
+        %div{:style => "padding-left: 25px; padding-top: 0px; float: left"}
+          = link_to (image_tag (@on_page == 5 ? "/Graphics/Parents/ParentsActive.png" : "/Graphics/Parents/ParentsNotActive.png"), :mouseover => "/Graphics/Parents/ParentsActive.png"), parents_path
+        %div{:style => "padding-left: 25px; padding-top: 0px; float: left"}
+          = link_to (image_tag (@on_page == 6 ? "/Graphics/Schools/SchoolsActive.png" : "/Graphics/Schools/SchoolsNotActive.png"), :mouseover => "/Graphics/Schools/SchoolsActive.png"), schools_path
     = yield
+
+
 
 
