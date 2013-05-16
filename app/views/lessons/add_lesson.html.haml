@@ -1,44 +1,45 @@
-//%html{:xmlns => "http://www.w3.org/1999/xhtml"}
-//  %head
-//    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
-//    %title Mathmoo - The Fun Never Stops
-//    %body
-//      #uploadStyle
-//        = form_tag lessons_path, :multipart => true do
-//          = label :lesson, :name, 'Name'
-//          = text_field :lesson, 'name'
-//          %br
-//          = label :lesson, :display_name, 'Display Name'
-//          = text_field :lesson, 'display_name'
-//          %br
-//          = label :lesson, :desciption, 'Description'
-//          = text_area :lesson, 'description'
-//          %br
-//          = label :lesson, :grade_level, 'Grade Level'
-//          = select :lesson, :grade_level, ['K-3','3-6','6-9','9-12','Other']
-//          %br
-//          = label :lesson, :lesson_type, 'Lesson Type'
-//          = select :lesson, :lesson_type, ['Math','Science','Geography','Language','Other']
-//          %br
-//          = label :lesson, :subject, 'Subject'
-//          = select :lesson, :subject, ['Arithmetic','Algebra','Algebra 2','Geometry','Pre Calc']
-//          %br
-//          = label :lesson, :views, 'Views'
-//          = text_field :lesson, :views
-//          %br
-//          = label :lesson, :content, 'Content'
-//          = file_field :lesson, :content
-//          %br
-//          = label :lesson, :content2, 'Content2'
-//          = file_field :lesson, :content2
-//          %br
-//          = label :lesson, :content3, 'Content3'
-//          = file_field :lesson, :content3
-//          %br
-//          = label :lesson, :content4, 'Content4'
-//          = file_field :lesson, :content4
-//          %br
-//          = label :lesson, :content5, 'Content5'
-//          = file_field :lesson, :content5
-//          %br
-//          = submit_tag 'Save Changes'
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title Mathmoo - The Fun Never Stops
+    %body
+      %div
+      //#uploadStyle
+        = form_tag lessons_path, :multipart => true do
+          = label :lesson, :name, 'Name'
+          = text_field :lesson, 'name'
+          %br
+          = label :lesson, :display_name, 'Display Name'
+          = text_field :lesson, 'display_name'
+          %br
+          = label :lesson, :desciption, 'Description'
+          = text_area :lesson, 'description'
+          %br
+          = label :lesson, :grade_level, 'Grade Level'
+          = select :lesson, :grade_level, ['K-3','3-6','6-9','9-12','Other']
+          %br
+          = label :lesson, :lesson_type, 'Lesson Type'
+          = select :lesson, :lesson_type, ['Math','Science','Geography','Language','Other']
+          %br
+          = label :lesson, :subject, 'Subject'
+          = select :lesson, :subject, ['Arithmetic','Algebra','Algebra 2','Geometry','Pre Calc']
+          %br
+          = label :lesson, :views, 'Views'
+          = text_field :lesson, :views
+          %br
+          = label :lesson, :content, 'Content'
+          = file_field :lesson, :content
+          %br
+          = label :lesson, :content2, 'Content2'
+          = file_field :lesson, :content2
+          %br
+          = label :lesson, :content3, 'Content3'
+          = file_field :lesson, :content3
+          %br
+          = label :lesson, :content4, 'Content4'
+          = file_field :lesson, :content4
+          %br
+          = label :lesson, :content5, 'Content5'
+          = file_field :lesson, :content5
+          %br
+          = submit_tag 'Save Changes'
