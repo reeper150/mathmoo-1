@@ -41,3 +41,5 @@ gem 'jquery-rails'
 
 # To use debugger
 gem 'haml'
+gem 'sinatra'
+gem 'paperclip'
