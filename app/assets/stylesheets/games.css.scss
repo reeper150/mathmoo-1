@@ -1,0 +1,301 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  background-image:url('/Graphics/wallpaper-2794302.jpg');
+  color: #999;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 14pt;
+}
+a:link {
+  color: #09F;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #09F;
+}
+
+a:hover {
+  color: #09F;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #09F;
+}
+
+
+#featureArea {
+  width: 1022px; 
+  height: 261px;
+  margin-left: auto; 
+  margin-right: auto;
+  background-image: url(/Graphics/FeatureBox.png);
+}
+#realMiddle{
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#main {
+}
+
+#inner {
+  width: 832px;
+  margine-right: 10px;
+  margin-left: 10px;
+  float: left;
+  height: 300px;
+}
+.gameMain {
+  width: 152px;
+  height: 102px;
+  background-image:url('/Graphics/GameBox.png');
+  background-repeat: no-repeat;
+  padding-top: 1px; 
+  padding-left: 1px;
+}
+.gameIcon {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  z-index: 2;
+}
+.gameOverlay {
+  position: absolute;
+  width: 152px;
+  height: 102px;
+  z-index: 3;
+}
+#featureImageBox {
+  position: absolute;
+  width: 650px; 
+  height: 200px;
+  z-index: 1;
+}
+#featureImage {
+  margin-left: 5px; 
+  margin-top: 10px; 
+  width: 650px; 
+  height: 200px;
+}
+#featureGloss {
+  float: left;
+  position: absolute;
+  width: 650px;
+  height: 200px;
+  z-index: 5;
+}
+#featureInfo {
+  position: absolute;
+  margin-left: 450px;
+  float:right;
+  width: 200px;
+  height: 200px;
+  z-index: 6;
+}
+#featureNameMini {
+  position: absolute;
+  margin-left: 450px;
+  color: White; 
+  font-size: 14px; 
+  padding-top: 12px; 
+  padding-left: 8px;
+  z-index: 20;
+}
+#featureDescription {
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 30px;
+  width: 180px;
+  color: #CCC; 
+  font-size: 12px; 
+  font-weight: normal; 
+  padding-top: 7px; 
+  padding-left: 8px;
+  z-index: 30;
+}
+#topButtons {
+  color: #333;
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+#featureBox {
+  float: left;
+  width: 660px;	
+  margin-right: 10px;
+}
+#featureTitle {
+  font: 'myriad Pro'; 
+  color: White; 
+  font-size: 20px; 
+  padding-left: 15px; 
+  padding-top: 12px;
+}
+.featureName a:link {
+  color: White;
+}
+.featureName a:hover {
+  color: White;
+  text-decoation: underline;
+}
+.featureName a:active {
+  color: White;
+}
+.featureName a:visited {
+  color: White;
+}
+.featureName {
+  float: left; 
+  margin-right: 10px;
+}
+#featureAuthor {
+  font-size: 12px; 
+  margin-top: 8px; 
+  color: #CCC; 
+  font-weight: normal;
+}
+#featureLine {
+  width: 650px; 
+  height: 1px; 
+  background-color: #666; 
+  margin-left: 7px; 
+  margin-top: 7px;
+}
+#featureGradeLevel {
+  float: right;
+  color: White;
+  font-size: 18px;
+  padding-top: 12px;
+  padding-right: 5px;
+}
+#lessonsBox {
+  float:left;
+  font-size: 12px;
+}
+#lessonsTitle {
+  margin-top: 10px;
+}
+#lessonLine {
+  width: 340px; 
+  height: 1px; 
+  background-color: #666; 
+  margin-top: 10px;
+}
+#lessonGrouping {
+
+}
+.lessonSingleBox {
+  background-image: url(/Graphics/LessonBox.png); 
+  width: 162px; 
+  height: 43px; 
+  float:left; 
+  margin-top: 8px;
+}
+.lessonSingleBox2 {
+  background-image: url(/Graphics/LessonBox.png); 
+  width: 162px; 
+  height: 43px; 
+  float:left; 
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.lessonImageBox {
+  float: left; 
+  width: 45px; 
+  color: #202020;
+}
+.lessonTextBox {
+  float:left; 
+  margin-top: 5px;
+}
+.lessonName {
+  color: White;
+}
+.lessonName a:link {
+  color: White;
+}
+.lessonName a:visited {
+  color: White;
+}
+.lessonName a:hover {
+  color: White;
+  text-decoration: underline;
+}
+.lessonName a:active {
+  color: White;
+}
+.lessonDetails {
+  padding-top: 4px;
+  font-weight: normal;
+  font-size: 12px;
+}
+.lessonDetails a:link {
+  color: #666;
+  font-weight: normal;
+  font-size: 12px;
+}
+.lessonDetails a:visited {
+  color: #666;
+  font-weight: normal;
+  font-size: 12px;
+}
+.lessonDetails a:hover {
+  color: #666;
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 12px;
+}
+.lessonDetails a:active {
+  color: #666;
+  font-weight: normal;
+  font-size: 12px;
+}
+#gamesSection {
+  width: 862px; 
+  float: left;
+}
+#gamesFeatured {
+  margin-bottom: 8px;
+  background-image: url(/Graphics/FeaturedGames.png);
+  width: 146px;
+  height: 22px;
+}
+.gameBox {
+  width: 170px; 
+  float: left; 
+  padding-bottom: 10px;
+}
+.gameBoxSpecial {
+  width: 152px; 
+  float: left; 
+  padding-bottom: 10px;
+}
+.gameName {
+  float: left;
+}
+#lessonsStyling {
+  color: #09F;
+}
+#lessonsTitle2 {
+  background-image: url(/Graphics/Lessons.png);
+  height: 22px;
+  width: 106px;
+  float: left;
+}
+.lessonsBullet {
+  float:left; 
+  margin-top:5px; 
+  margin-right: 5px;
+  height: 7px;
+  width: 7px;
+  background-image: url(/Graphics/Bullet.png);
+}
+.theLessonName {
+  margin-top: 0px; 
+  margin-left:3px;
+}
