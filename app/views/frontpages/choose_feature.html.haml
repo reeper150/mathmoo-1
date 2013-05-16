@@ -1,0 +1,13 @@
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title Mathmoo - The Fun Never Stops
+    %body
+      #uploadStyle
+        = form_tag frontpages_path do
+          = label :frontpage, :featured_game, 'Featured Game'
+          = text_field :frontpage, 'featured_game'
+          %br
+          = submit_tag 'Save Changes'
+
+
