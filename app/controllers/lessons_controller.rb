@@ -2,7 +2,7 @@ class LessonsController < ApplicationController
   def add_lesson
   end
   def show
-    #@on_page = 2;
+    @on_page = 2;
     #@lesson = Lesson.find(params[:id])
   end
   def create
