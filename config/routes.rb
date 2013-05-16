@@ -17,4 +17,9 @@ Rottenpotatoes::Application.routes.draw do
   end
   resources :frontpages
   match '/choose_feature', :to => 'frontpages#choose_feature'
+
+  match '/teachers', :to => 'infos#teachers'
+  match '/students', :to => 'infos#students'
+  match '/parents', :to => 'infos#parents'
+  match '/schools', :to => 'infos#schools'
 end
