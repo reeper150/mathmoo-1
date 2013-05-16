@@ -1,0 +1,55 @@
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title Mathmoo - The Fun Never Stops
+    %body
+      #uploadStyle
+        = form_tag games_path, :multipart => true do
+          = label :game, :name, 'Name'
+          = text_field :game, 'name'
+          %br
+          = label :game, :description, 'Description'
+          %br
+          = text_area :game, 'description'
+          %br
+          = label :game, :category, 'Category'
+          = select :game, :category, ['Math','Puzzle','Skill','Science','Other']
+          %br
+          = label :game, :age_group, 'Age Group'
+          = select :game, :age_group, ['K-3', '3-6', '6-9', '9-12']
+          %br
+          = label :game, :dimension_x, 'Dimension X'
+          = text_field :game, :dimension_x
+          %br
+          = label :game, :dimension_y, 'Dimension y'
+          = text_field :game, :dimension_y
+          %br
+
+          = label :game, :image, 'Image'
+          = file_field :game, :image
+          %br
+          = label :game, :feature_image, 'Feature Image'
+          = file_field :game, :feature_image
+          %br
+          = label :game, :developer, 'Developer'
+          = text_field :game, :developer
+          %br
+          = label :game, :instructions, 'Instructions'
+          %br
+          = text_area :game, :instructions
+          %br
+          = label :game, :date_to_go_live, 'Date To Go Live'
+          = date_select :game, :date_to_go_live
+          %br
+          = label :game, :date_to_show_countdown, 'Date To Show Countdown'
+          = date_select :game, :date_to_show_countdown
+          %br
+          = label :game, :plays, 'Plays'
+          = text_field :game, :plays
+          %br
+          = label :game, :swf, 'Swf'
+          = file_field :game, :swf
+          %br
+          = submit_tag 'Save Changes'
+
+

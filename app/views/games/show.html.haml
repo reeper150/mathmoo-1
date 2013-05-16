@@ -1,0 +1,15 @@
+%div{:style => "width: 1022px; margin-left: auto; margin-right: auto; padding-top: 100px; text-align: center"}
+  %object{ :height => "100%", :classid => "clsid:D27CDB6E-AE6D-11cf-96B8-444553540000", :width => "100%" }
+    %param{ :name => "movie", :value => @game.swf.url }
+    <!--[if !IE]>-->
+    %object{ :type => "application/x-shockwave-flash", :height => @game.dimension_y, :data => @game.swf.url, :width => @game.dimension_x }
+      <!--<![endif] -->
+      %p
+        Alternative content
+        <!--[if !IE]>-->
+      <!--<![endif] -->
+
+= #flashembed("flash", @game.swf.url); http://media.y8.com/system/contents/30367/original/SnailBob2.swf?1308531368
+= #swf_path @game.swf.url  /public/system/games/swfs/5/original/599004_The_Core_4.swf http://uploads.ungrounded.net/599000/599004_The_Core_4.swf
+= #swfobject.embedSWF("/system/games/swfs/5/original/599004_The_Core_4.swf", "flash", "100%", "100%", '9.0.0'); 
+

@@ -1,0 +1,9 @@
+<%= form_for(@game , :html => { :multipart => true }) do |f| %>
+  <div class = "field">
+    <%= f.label :swf %>
+    <%= f.file_field :i %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

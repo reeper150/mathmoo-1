@@ -1,0 +1,78 @@
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title Mathmoo - The Fun Never Stops
+    %body
+    
+    #all
+      #featureArea
+        #featureBox
+          #featureGradeLevel
+            K-3
+          #featureTitle
+            .featureName
+              = link_to (@featured.name.upcase), game_path(@featured)
+            #featureAuthor
+              by: Christopher Gregorio
+              = @featuredID
+          #featureLine
+          #featureImage
+            #featureImageBox
+              = link_to (image_tag @featured.feature_image.url), game_path(@featured)
+            #featureGloss
+              = link_to (image_tag "/Graphics/GlossOverlay.png"), game_path(@featured)
+            #featureInfo
+              = link_to (image_tag "/Graphics/FeatureOverlay.png"), game_path(@featured)
+            #featureNameMini
+              = @featured.name
+            #featureDescription
+              = @featured.description
+        #lessonsBox
+          #lessonsTitle
+            %img{:alt => "Parents", :height => "22", :src => "Graphics/Lessons.png", :width => "106"}/
+          #lessonLine
+          #lessonGrouping
+
+            - @lessons[0..7].each_slice(2) do |slice|
+              %div
+                - slice.each_with_index do |lesson, i|
+                  %div{:class => (((i)%2 == 0) ? "lessonSingleBox" : "lessonSingleBox2") }
+                    .lessonImageBox
+                      &nbsp;
+                    .lessonTextBox
+                      .lessonName
+                        = link_to lesson.display_name, lesson_path(lesson)
+                      .lessonDetails
+                        = link_to (lesson.description[0..15] << '...'), lesson_path(lesson)
+      %br/
+      #main
+        #mainBoxTop
+      #body2
+        #gamesSection
+          #inner
+            #gamesFeatured
+            - @games.each_with_index do |game, i|
+              %div{:class => (((i+1)%5 == 0) ? "gameBoxSpecial" : "gameBox") }
+                %div
+                  .gameMain
+                    %a{:href => game_path(game)}
+                      %img.gameIcon{:height => "100", :src => game.image.url, :width => "150"}/
+                    %a{:href => game_path(game)}
+                      %img.gameOverlay{:height => "100", :src => "Graphics/theOverlay.png", :width => "150"}/
+                  .gameName
+                    = link_to game.name[0..18], game_path(game)
+        #lessonsStyling
+          #lessonsTitle2
+          %br/
+          %div
+            &nbsp;
+          - @lessons.each do |lesson|
+            %div
+              .lessonsBullet
+              .theLessonName
+                = link_to lesson.display_name, lesson_path(lesson)
+    
+
+
+
+
