@@ -1,7 +1,12 @@
 Rottenpotatoes::Application.routes.draw do
-  resources :movies
-  match 'movies/:id/similar' => 'movies#similar'
-  root :to => redirect('/movies')
+  root :to  => 'games#index'
+  resources :games do
+    member do
+      post 'upload'
+    end
+  end
+  match '/add_game', :to => 'games#add_game'
+  match '/games/:id', :to => 'games#show', :format => false
 
   match '/add_lesson', :to => 'lessons#add_lesson'
   match '/lessons/:id', :to => 'lessons#show', :format => false
